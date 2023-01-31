@@ -7,4 +7,4 @@ function factorial(n) {
   return output;
 }
 
-console.log(factorial(5)); //1
+console.log(factorial(5)); //120
