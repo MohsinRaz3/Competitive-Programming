@@ -1,10 +1,12 @@
 function kadane(x) {
-  let maxSum = 0;
   let currentSum = 0;
+  let maxSum = 0;
 
   for (let i = 0; i < x.length; i++) {
     let currentNum = x[i];
+
     currentSum = Math.max(currentSum + currentNum, 0);
+
     maxSum = Math.max(maxSum, currentSum);
   }
   return maxSum;
